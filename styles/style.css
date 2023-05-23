@@ -1,0 +1,129 @@
+/* styling for all html pages */
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    max-width: 1500px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+/* header and nav styling */
+
+header {
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+nav {
+    background-color: #2FAAF3;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-align: center;
+    color: black;
+    font-size: 26px;
+    padding: 30px;
+    text-decoration: none;
+}
+
+/* body styling for home.html */
+
+#slogan-box {
+    display: grid;
+    grid-template-rows: 100px;
+    margin-top: 50px;
+    background-color:aliceblue;
+    height: 200px;
+    text-align: center;
+}
+
+#catalog-box {
+    display: grid;
+    grid-template-columns: 750px 750px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#inventory-box {
+    display: grid;
+    grid-template-columns: 750px 750px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.inventory-demo {
+    height: 500px;
+    width: 750px;
+}
+
+#get-started-box {
+    width: 750px;
+    height: 400px;
+    margin: auto;
+    border: 3px solid black;
+    text-align: center;
+}
+
+#get-started-box h1, p, button {
+    padding: 25px;
+}
+footer {
+    margin-top: 100px;
+    height: 75px;
+    text-align: center;
+    background-color: #2FAAF3;
+}
+
+/*styling for login.html */
+
+#login-box {
+    border: 3px solid black;
+    width: 750px;
+    margin: 200px auto;
+}
+
+#login-form h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#login-form label, input {
+    display:flex;
+    flex-direction:column;
+}
+
+#login-form input {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#login-form label {
+    margin-left: 125px;
+    margin-bottom: 5px;
+}
+
+#login-form button {
+    padding: 10px 32px;
+    margin-left: 330px;
+    margin-right: 330px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#login-form a {
+    display: block;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 100px
+}
+
+/* styling for signup.html */
+
