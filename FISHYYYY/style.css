@@ -9,6 +9,7 @@
 
 body {
     background: #D2E3FC;
+    color: black;
 }
 
 .header {
@@ -43,4 +44,77 @@ body {
 .navbar a.active {
     color: #FFC145;
 
+}
+
+.hometab {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFC145;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content .bttn-box {
+    width: 345px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bttn-box a {
+    position: relative;
+    display: inline-flex;
+    width: 150px;
+    height: 100%;
+    /*background: #B7FDFE;---adds color just 1*/
+    border: 2px solid #B7FDFE;
+    border-radius: 8px;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.bttn-box a:nth-child(2) {
+    background: transparent;
+    /*color: #B7FDFE; ---- changes the bttn letters*/
+}
+
+.bttn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    /*chnages background of bttns*/background: #E2EFDE;
+    z-index: -1;
+    transition: .2s;
+}
+
+.bttn-box a:hover::before {
+    width: 100%;
 }
