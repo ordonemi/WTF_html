@@ -1,129 +1,195 @@
-/* styling for all html pages */
-body {
-    background-color: white;
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* header and nav styling */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-#content {
-    max-width: 1500px;
-    background-color: white;
+body {
+    background: #D2E3FC;
+    color: black;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #FFC145;
+
+}
+
+/* home.html styling */
+
+.hometab {
+    margin-top: 200px;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.intro-box {
+    margin: 100px auto;
+    max-width: 600px;
+}
+
+.intro-box h1 {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.intro-box h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFC145;
+}
+
+.intro-box p {
+    font-size: 16px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.bttn-box {
+    width: 345px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bttn-box a {
+    position: relative;
+    display: inline-flex;
+    width: 150px;
+    height: 100%;
+    /*background: #B7FDFE;---adds color just 1*/
+    border: 2px solid #B7FDFE;
+    border-radius: 8px;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.bttn-box a:nth-child(2) {
+    background: transparent;
+    /*color: #B7FDFE; ---- changes the bttn letters*/
+}
+
+.bttn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    /*chnages background of bttns*/background: #E2EFDE;
+    z-index: -1;
+    transition: .2s;
+}
+
+.bttn-box a:hover::before {
+    width: 100%;
+}
+
+.fish-catalog, .inventory-explanation {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.fish-catalog h1, .inventory-explanation h1 {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.fish-catalog p, .inventory-explanation p {
+    line-height: 2em;
+    max-width: 500px;
+    font-size: 20px;
+    text-align: center;
     margin: 0 auto;
 }
 
-/* header and nav styling */
-
-header {
-    display: grid;
-    grid-template-columns: 200px auto;
+.inventory-explanation p {
+    max-width: 700px;
 }
 
-nav {
-    background-color: #2FAAF3;
+.media-logo {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-nav a {
-    text-align: center;
-    color: black;
-    font-size: 26px;
-    padding: 30px;
+.media-logo a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #B7FDFE;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #B7FDFE;
     text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.2s;
 }
 
-/* body styling for home.html */
-
-#slogan-box {
-    display: grid;
-    grid-template-rows: 100px;
-    margin-top: 50px;
-    background-color:aliceblue;
-    height: 200px;
-    text-align: center;
+.media-logo a:hover {
+    color: #081B29;
 }
 
-#catalog-box {
-    display: grid;
-    grid-template-columns: 750px 750px;
-    text-align: center;
-    margin-top: 100px;
+.media-logo a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #E2EFDE;
+    z-index: -1;
+    transition: 0.2s;
 }
 
-#inventory-box {
-    display: grid;
-    grid-template-columns: 750px 750px;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 200px;
+.media-logo a:hover:before {
+    width: 100%;
 }
-
-.inventory-demo {
-    height: 500px;
-    width: 750px;
-}
-
-#get-started-box {
-    width: 750px;
-    height: 400px;
-    margin: auto;
-    border: 3px solid black;
-    text-align: center;
-}
-
-#get-started-box h1, p, button {
-    padding: 25px;
-}
-footer {
-    margin-top: 100px;
-    height: 75px;
-    text-align: center;
-    background-color: #2FAAF3;
-}
-
-/*styling for login.html */
-
-#login-box {
-    border: 3px solid black;
-    width: 750px;
-    margin: 200px auto;
-}
-
-#login-form h1 {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-#login-form label, input {
-    display:flex;
-    flex-direction:column;
-}
-
-#login-form input {
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#login-form label {
-    margin-left: 125px;
-    margin-bottom: 5px;
-}
-
-#login-form button {
-    padding: 10px 32px;
-    margin-left: 330px;
-    margin-right: 330px;
-    margin-top: 50px;
-    margin-bottom: 10px;
-}
-
-#login-form a {
-    display: block;
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-bottom: 100px
-}
-
-/* styling for signup.html */
-
