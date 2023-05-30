@@ -48,6 +48,7 @@ body {
 
 .hometab {
     height: 100vh;
+    background: ;
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -116,5 +117,51 @@ body {
 }
 
 .bttn-box a:hover::before {
+    width: 100%;
+}
+
+.media-logo {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.media-logo a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #B7FDFE;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #B7FDFE;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.media-logo a:hover {
+    color: #081B29;
+}
+
+.media-logo a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #E2EFDE;
+    z-index: -1;
+    transition: 0.2s;
+}
+
+.media-logo a:hover:before {
     width: 100%;
 }
