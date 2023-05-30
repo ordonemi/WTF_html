@@ -49,12 +49,9 @@ body {
 
 .hometab {
     height: 100vh;
-<<<<<<< HEAD
     background: url('fishynew.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-=======
->>>>>>> 8074fad709d851e724abeba77cd8194b32a915d0
     display: flex;
     align-items: center;
     padding: 0 10%;
