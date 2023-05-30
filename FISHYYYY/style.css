@@ -8,8 +8,9 @@
 }
 
 body {
-    background: #D2E3FC;
-    color: black;
+    /*background: #D2E3FC;*/
+    /*color: black;*/
+    color: white;
 }
 
 .header {
@@ -48,7 +49,9 @@ body {
 
 .hometab {
     height: 100vh;
-    background: ;
+    background: url('fishynew.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -90,7 +93,8 @@ body {
     border: 2px solid #B7FDFE;
     border-radius: 8px;
     font-size: 19px;
-    color: black;
+    /*color: black;*/
+    color: #B7FDFE;
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
