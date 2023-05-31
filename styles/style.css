@@ -58,6 +58,7 @@ body {
 .intro-box {
     margin: 100px auto;
     max-width: 600px;
+    margin-bottom: 300px;
 }
 
 .intro-box h1 {
@@ -69,19 +70,34 @@ body {
     font-size: 32px;
     font-weight: 700;
     color: #FFC145;
+    margin-top: 20px;
 }
 
 .intro-box p {
-    font-size: 16px;
-    line-height: 1.5em;
-    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 2em;
+    font-weight: 500;
+    text-align: center; 
 }
 
 .bttn-box {
-    width: 345px;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
+    margin: 200px auto;
+    display: grid;
+}
+
+.bttn-box h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.bttn-box p {
+    font-size: 20px;
+    line-height: 2em;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .bttn-box a {
@@ -100,6 +116,12 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 1;
+    margin: 0 20px;
+}
+
+.bttn-box div {
+    margin-top: 100px;
+    text-align: center;
 }
 
 .bttn-box a:nth-child(2) {
@@ -124,9 +146,10 @@ body {
 }
 
 .fish-catalog, .inventory-explanation {
-    margin-top: 100px;
+    margin-top: 200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 300px;
 }
 
 .fish-catalog h1, .inventory-explanation h1 {
@@ -149,7 +172,6 @@ body {
 }
 
 .media-logo {
-    position: absolute;
     bottom: 40px;
     width: 170px;
     display: flex;
