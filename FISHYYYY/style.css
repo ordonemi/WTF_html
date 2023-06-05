@@ -62,7 +62,7 @@ body {
 
 .hometab {
     height: 100vh;
-    background: url('fishynew.jpg') no-repeat;
+    background: #D2E3FC;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -88,7 +88,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: black;
+    background: #D2E3FC;
     animation: showRight 1s ease forwards;
     animation-delay: .4s;
 }
@@ -207,3 +207,15 @@ body {
         width: 0;
     }
 }
+
+            /*<div class="home-content-2">
+
+                <h1>How Does It Work?</h1>
+                <h3>It's Easy</h3>
+                <p> We have developed and trained a machine learning model with hundreds
+                    of pictures of fish pulled from the internet. Our model is now able to 
+                    identify the type of fish from an image. All you have to do is create an account, upload you image,
+                    and let our model do the rest of the work!
+                </p>
+
+            </div>*/
