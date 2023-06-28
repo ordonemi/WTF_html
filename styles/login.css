@@ -87,9 +87,9 @@ body {
     background: white;
     border-radius: 50px 5px;
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-}
+}*/
 
-.wrapper::before{
+.wrapper .form::before {
     content:"";
     position: absolute;
     top:-50%;
@@ -102,7 +102,7 @@ body {
     animation-delay: -3s;
 }
 
-.wrapper::after{
+.wrapper .form::after {
     content:"";
     position: absolute;
     top:-50%;
